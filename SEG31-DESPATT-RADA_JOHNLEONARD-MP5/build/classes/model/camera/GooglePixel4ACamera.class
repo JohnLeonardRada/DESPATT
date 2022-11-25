@@ -1,0 +1,19 @@
+); i.hasNext(); ) {
+                ActionMessage msg = (ActionMessage) i.next();
+                if (msg.getValues() != null && msg.getValues().length > 0) {
+                    addActionMessage(getText(msg.getKey(), Arrays.asList(msg.getValues())));
+                } else {
+                    addActionMessage(getText(msg.getKey()));
+                }
+            }
+        }
+        
+        if (forward instanceof WrapperActionForward || actionConfig.getResults().containsKey(forward.getName())) {
+            return forward.getName();
+        } else {
+            throw new StrutsException("Unable to handle action forwards that don't have an associated result", actionConfig);
+        }
+    }
+    
+    public void setModel(ActionForm model) {
+        actionForm = mo

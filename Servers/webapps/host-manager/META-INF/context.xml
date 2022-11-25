@@ -1,0 +1,53 @@
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyCacheMode(org.hibernate.CacheMode)"><!-- --></A><H3>
+applyCacheMode</H3>
+<PRE>
+protected abstract void <B>applyCacheMode</B>(<A HREF="../../../org/hibernate/CacheMode.html" title="class in org.hibernate">CacheMode</A>&nbsp;cacheMode)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyFlushMode(org.hibernate.FlushMode)"><!-- --></A><H3>
+applyFlushMode</H3>
+<PRE>
+protected abstract void <B>applyFlushMode</B>(<A HREF="../../../org/hibernate/FlushMode.html" title="class in org.hibernate">FlushMode</A>&nbsp;flushMode)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="canApplyLockModes()"><!-- --></A><H3>
+canApplyLockModes</H3>
+<PRE>
+protected abstract boolean <B>canApplyLockModes</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyAliasSpecificLockMode(java.lang.String, org.hibernate.LockMode)"><!-- --></A><H3>
+applyAliasSpecificLockMode</H3>
+<PRE>
+protected abstract void <B>applyAliasSpecificLockMode</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                   

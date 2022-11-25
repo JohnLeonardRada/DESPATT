@@ -1,0 +1,25 @@
+iteria/class-use/PathImplementor.html#org.hibernate.ejb.criteria.path"><B>PathImplementor</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implementation contract for the JPA <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/criteria.Path.html?is-external=true" title="class or interface in javax.persistence"><CODE>Path</CODE></A> interface.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/ejb/criteria/class-use/PathSource.html#org.hibernate.ejb.criteria.path"><B>PathSource</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implementation contract for things which can be the source (parent, left-hand-side, etc) of a path</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/ejb/criteria/class-use/Renderable.html#org.hibernate.ejb.criteria.path"><B>Renderable</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TODO : javadoc</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/ejb/criteria/class-use/SelectionImplementor.html#org.hibernate.ejb.criteria.path"><B>SelectionImplementor</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TODO : javadoc</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org

@@ -1,0 +1,18 @@
+</A></CODE></FONT></TD>
+<TD><CODE><B>AnsiTrimEmulationFunction.</B><B><A HREF="../../../../../org/hibernate/dialect/function/AnsiTrimEmulationFunction.html#resolveTrailingSpaceTrimFunction()">resolveTrailingSpaceTrimFunction</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resolve the function definition which should be used to trim trailing spaces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;<A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractAnsiTrimEmulationFunction.</B><B><A HREF="../../../../../org/hibernate/dialect/function/AbstractAnsiTrimEmulationFunction.html#resolveTrailingSpaceTrimFunction()">resolveTrailingSpaceTrimFunction</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resolve the function definition which should be used to trim trailing spaces.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A></CODE></FONT></TD>
+<TD><CODE><B>AnsiTrimEmulationFunction.</B><B><A HREF="../../../../../org/hibernate/dialect/function/AnsiTrimEmulationFunction.html#resolveTrailingTrimFun

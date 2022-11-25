@@ -1,0 +1,13 @@
+docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/type/CustomCollectionType.html#instantiate(int)">instantiate</A></B>(int&nbsp;anticipatedType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate an empty instance of the "underlying" collection (not a wrapper),
+ but with the given anticipated size (i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../org/hibernate/collection/PersistentCollection.html" title="interface in org.hibernate.collection">PersistentCollection</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../org/hibernate/type/CustomCollectionType.html#instantiate(org.hibernate.engine.SessionImplementor, org.hibernate.persister.collection.CollectionPersister, java.io.Serializable)">instantiate</A></B>(<A HREF="../../../org/hibernate/engine/SessionImplementor.html" title="interface in org.hibernate.engine">SessionImplementor</A>&nbsp;session,
+            <A HREF="../../../org/hibernate/persister/collection/CollectionPersister.html" title="interface in org.hibernate.persister.collection">CollectionPersister</A>&nbsp;persister,
+            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io"

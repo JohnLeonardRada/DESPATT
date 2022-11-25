@@ -1,0 +1,79 @@
+/*
+ * Copyright 2002-2006,2009 The Apache Software Foundation.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.opensymphony.xwork2.conversion.impl;
+
+import java.util.Map;
+
+
+/**
+ * <code>EnumTypeConverter</code>
+ *
+ * <!-- START SNIPPET: description -->
+ * This class converts java 5 enums to String and from String[] to enum.
+ * <p/>
+ * One of Java 5's improvements is providing enumeration facility.
+ * Up to now, there existed no enumerations. The only way to simulate was the so-called int Enum pattern:
+ * {code}
+ * public static final int SEASON_WINTER = 0;
+ * public static final int SEASON_SPRING = 1;
+ * public static final int SEASON_SUMMER = 2;
+ * public static final int SEASON_FALL   = 3;
+ * {code}
+ * <p/>
+ * Java 5.0 now provides the following construct:
+ * {code}
+ * public static enum Season { WINTER, SPRING, SUMMER, FALL };
+ * {code}
+ * <!-- END SNIPPET: description -->
+ *
+ * <!-- START SNIPPET: example -->
+ * h3. Implementing Java 5 Enumeration Type Conversion
+ * <p/>
+ * 1. myAction-conversion.properties*
+ * <p/>
+ * Place a myAction-conversion.properties-file in the path of your Action.
+ * Add the following entry to the properties-file:
+ * {code}
+ * nameOfYourField=fullyClassifiedNameOfYourConverter
+ * {code}
+ * &nbsp;
+ * <p/>
+ * 2. myAction.java*
+ * Your action contains the _enumeration_:
+ * {code}
+ * public enum Criticality {DEBUG, INFO, WARNING, ERROR, FATAL}
+ * {code}
+ * &nbsp;
+ * * Your action contains the _private field_:
+ * {code}
+ * private myEnum myFieldForEnum;
+ * {code}
+ * &nbsp;
+ * Your action contains _getters and setters_ for your field:
+ * {code}
+ * public myEnum getCriticality() {
+ *         return myFieldForEnum;
+ *     }
+ *
+ *     public void setCriticality(myEnum myFieldForEnum) {
+ *         this.myFieldForEnum= myFieldForEnum;
+ *     }
+ * {code}
+ * <p/>
+ * 3. JSP*
+ * <p/>
+ * &

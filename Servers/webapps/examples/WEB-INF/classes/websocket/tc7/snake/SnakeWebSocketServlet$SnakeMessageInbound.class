@@ -1,0 +1,47 @@
+ite" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../org/hibernate/type/Type.html#beforeAssemble(java.io.Serializable, org.hibernate.engine.SessionImplementor)">beforeAssemble</A>, <A HREF="../../../org/hibernate/type/Type.html#getHashCode(java.lang.Object, org.hibernate.EntityMode, org.hibernate.engine.SessionFactoryImplementor)">getHashCode</A>, <A HREF="../../../org/hibernate/type/Type.html#getSemiResolvedType(org.hibernate.engine.SessionFactoryImplementor)">getSemiResolvedType</A>, <A HREF="../../../org/hibernate/type/Type.html#isAnyType()">isAnyType</A>, <A HREF="../../../org/hibernate/type/Type.html#isComponentType()">isComponentType</A>, <A HREF="../../../org/hibernate/type/Type.html#isEntityType()">isEntityType</A>, <A HREF="../../../org/hibernate/type/Type.html#isEqual(java.lang.Object, java.lang.Object, org.hibernate.EntityMode, org.hibernate.engine.SessionFactoryImplementor)">isEqual</A>, <A HREF="../../../org/hibernate/type/Type.html#isSame(java.lang.Object, java.lang.Object, org.hibernate.EntityMode)">isSame</A>, <A HREF="../../../org/hibernate/type/Type.html#replace(java.lang.Object, java.lang.Object, org.hibernate.engine.SessionImplementor, java.lang.Object, java.util.Map, org.hibernate.type.ForeignKeyDirection)">replace</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="CustomCollectionType(org.hibernate.type.TypeFactory.TypeScope, java.lang.Class, java.lang.String, java.lang.String, boolean)"><!-- --></A><H3>
+CustomCollectionType</H3>
+<PRE>
+public <B>CustomCollectionType</B>(<A HREF="../../../org/hibernate/type/TypeFactory.TypeScope.html" title="interface in org.hibernate.type">TypeFactory.TypeScope</A>&nbsp;typeScope,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&nbsp;userTypeClass,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;role,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;foreignKeyPropertyName,
+                            boolean&nbsp;isEmbeddedInXML)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="instantiate(org.hibernate.engine.SessionImplementor, org.hibernate.persister.collection.CollectionPersister, java.io.Serializable)"><!-- --></A><H3>
+instantiate</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/collection/PersistentCollection.html" title="interface in org.hibernate.collection">PersistentCollection</A> <B>instantiate</B>(<A HREF="../../../org/hibernate/engine/SessionImplementor.html" title="interface in org.hibernate.engine">SessionImplementor</A>&nbsp;session,
+                                        <A HREF="../../../org/hibernate/persister/collection/CollectionPersister.html" title="interface in org.hibernate.persister.collection">CollectionPersister</A>&nbsp;persister,
+                                        <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>&nbsp;key)
+                                 throws <A HREF="../../../org/hibernate/HibernateException.html" title="class in org.hibernate">HibernateException</A></PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../org/hibernate/type/Collecti

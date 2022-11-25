@@ -1,0 +1,18 @@
+tml" title="class in org.hibernate.dialect.function">ConditionalParenthesisFunction</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essentially the same as <A HREF="../../../../../org/hibernate/dialect/function/StandardSQLFunction.html" title="class in org.hibernate.dialect.function"><CODE>StandardSQLFunction</CODE></A>,
+ except that here the parentheses are not included when no arguments are given.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/dialect/function/ConvertFunction.html" title="class in org.hibernate.dialect.function">ConvertFunction</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Cach&eacute; defintion of a convert function.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/dialect/function/DerbyConcatFunction.html" title="class in org.hibernate.dialect.functio

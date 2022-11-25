@@ -1,0 +1,63 @@
+ExceptionConfigs() {
+        initExceptionConfigs();
+        return super.findExceptionConfigs();
+    }
+
+    public ExceptionConfig findException(Class type) {
+        initExceptionConfigs();
+        return super.findException(type);
+    }
+
+    public ActionForward getInputForward() {
+        throw new UnsupportedOperationException("NYI");
+    }
+
+    public ModuleConfig getModuleConfig() {
+        if (moduleConfig == null) {
+            moduleConfig = strutsFactory.createModuleConfig(delegate.getPackageName());
+        }
+
+        return moduleConfig;
+    }
+
+    public void setModuleConfig(ModuleConfig moduleConfig) {
+        throw new UnsupportedOperationException("Not implemented - immutable");
+    }
+
+    public String getAttribute() {
+        return attribute;
+    }
+
+    public void setAttribute(String attribute) {
+        this.attribute = attribute;
+    }
+
+    public String getForward() {
+        throw new UnsupportedOperationException("NYI");
+    }
+
+    public void setForward(String forward) {
+        throw new UnsupportedOperationException("Not implemented - immutable");
+    }
+
+    public String getInclude() {
+        throw new UnsupportedOperationException("NYI");
+    }
+
+    public void setInclude(String include) {
+        throw new UnsupportedOperationException("Not implemented - immutable");
+    }
+
+    public String getInput() {
+        throw new UnsupportedOperationException("NYI");
+    }
+
+    public void setInput(String input) {
+        throw new UnsupportedOperationException("Not implemented - immutable");
+    }
+
+    public String getMultipartClass() {
+        throw new UnsupportedOperationException("NYI");
+    }
+
+    public void setMultipartClass(String multip

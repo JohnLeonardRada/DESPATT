@@ -1,0 +1,30 @@
+terceptor() {
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("new I18nInterceptor()");
+        }
+    }
+
+    public void setParameterName(String parameterName) {
+        this.parameterName = parameterName;
+    }
+
+    public void setRequestOnlyParameterName(String requestOnlyParameterName) {
+        this.requestOnlyParameterName = requestOnlyParameterName;
+    }
+
+    public void setAttributeName(String attributeName) {
+        this.attributeName = attributeName;
+    }
+
+    @Override
+    public String intercept(ActionInvocation invocation) throws Exception {
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("intercept '"
+                    + invocation.getProxy().getNamespace() + "/"
+                    + invocation.getProxy().getActionName() + "' { ");
+        }
+        //get requested locale
+        Map<String, Object> params = invocation.getInvocationContext().getParameters();
+
+        boolean storeInSession = true;
+        Object reques

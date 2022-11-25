@@ -1,0 +1,19 @@
+A><H3>
+getAddColumnString</H3>
+<PRE>
+public <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getAddColumnString</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../org/hibernate/dialect/Dialect.html#getAddColumnString()">Dialect</A></CODE></B></DD>
+<DD>The syntax used to add a column to a table (optional).
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../org/hibernate/dialect/Dialect.html#getAddColumnString()">getAddColumnString</A></CODE> in class <CODE><A HREF="../../../org/hibernate/dialect/Dialect.html" title="class in org.hibernate.dialect">Dialect</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The "add column" fragment.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="qualifyIndexName()"><!-- --></

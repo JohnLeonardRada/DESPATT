@@ -1,0 +1,25 @@
+String removeName : paramNames) {
+                    // see if the field is in the parameter map
+                    if (parameters.containsKey(removeName)) {
+
+                        try {
+                            String[] values = (String[]) parameters
+                                    .get(removeName);
+                            String value = values[0];
+                            if (null != value && this.paramValues.contains(value)) {
+                                parameters.remove(removeName);
+                            }
+                        } catch (Exception e) {
+                            if (LOG.isErrorEnabled()) {
+                                LOG.error("Failed to convert parameter to string", e);
+                            }
+                        }
+                    }
+                }
+			}
+		}
+		return invocation.invoke();
+	}
+
+	/**
+	 * Allows <code>paramNames</code> attribute to be set as comma-separated-value

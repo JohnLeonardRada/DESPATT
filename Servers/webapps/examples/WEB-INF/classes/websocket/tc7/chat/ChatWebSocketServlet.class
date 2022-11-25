@@ -1,0 +1,20 @@
+"right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Dialect.</B><B><A HREF="../../../../../org/hibernate/dialect/Dialect.html#getFunctions()">getFunctions</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a map of the dialect's registered functions
+ (functionName => <A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function"><CODE>SQLFunction</CODE></A>).</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/hibernate/dialect/package-summary.html">org.hibernate.dialect</A> with parameters of type <A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Dialect.</B><B><A HREF="../../../../../org/hibernate/dialect/Dialect.html#registerFunction(java.lang.String, org.hiber

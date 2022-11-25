@@ -1,0 +1,37 @@
+;
+        }
+
+        public Builder packageName(String name) {
+            target.packageName = name;
+            return this;
+        }
+
+        public Builder name(String name) {
+            target.name = name;
+            return this;
+        }
+
+        public Builder className(String name) {
+            target.className = name;
+            return this;
+        }
+
+        public Builder defaultClassName(String name) {
+            if (StringUtils.isEmpty(target.className)) {
+                target.className = name;
+            }
+            return this;
+        }
+
+        public Builder methodName(String method) {
+            target.methodName = method;
+            return this;
+        }
+
+        public Builder addExceptionMapping(ExceptionMappingConfig exceptionMapping) {
+            target.exceptionMappings.add(exceptionMapping);
+            return this;
+        }
+
+        public Builder addExceptionMappings(Collection<? extends ExceptionMappingConfig> mappings) {
+            target.exceptionMappi

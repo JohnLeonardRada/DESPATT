@@ -1,0 +1,14 @@
+;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Represents a "size of" expression in regards to a persistent collection; the implication is
+ that of a subquery.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/ejb/criteria/expression/SubqueryComparisonModifierExpression.html" title="class in org.hibernate.ejb.criteria.expression">SubqueryComparisonModifierExpression&lt;Y&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Represents a <A HREF="../../../../../org/hibernate/ejb/criteria/expression/SubqueryComparisonModifierExpression.Modifier.html#ALL"><CODE>SubqueryComparisonModifierExpression.Modifier.ALL</CODE></A>, <A HREF="../../../../../org/hibernate/ejb/criteria/expression/SubqueryComparisonModifierExpression.Modifier.html#ANY"><CODE>SubqueryComparisonModifierExpression.Modifier.ANY</CODE></A>, <A HREF="../../../../../org/hibernate/ejb/criteria/expression/SubqueryComparisonModifierExpression.Modifier.html#SOME"><CODE>SubqueryComparisonModifierExpression.Modifier.SOME</CODE></A> modifier appplied to a subquery as
+ part of

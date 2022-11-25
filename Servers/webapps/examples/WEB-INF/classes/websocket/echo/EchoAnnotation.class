@@ -1,0 +1,23 @@
+t/UIComponent.html#BEANINFO_KEY">BEANINFO_KEY</A>, <A HREF="../../../javax/faces/component/UIComponent.html#bindings">bindings</A>, <A HREF="../../../javax/faces/component/UIComponent.html#COMPOSITE_COMPONENT_TYPE_KEY">COMPOSITE_COMPONENT_TYPE_KEY</A>, <A HREF="../../../javax/faces/component/UIComponent.html#COMPOSITE_FACET_NAME">COMPOSITE_FACET_NAME</A>, <A HREF="../../../javax/faces/component/UIComponent.html#CURRENT_COMPONENT">CURRENT_COMPONENT</A>, <A HREF="../../../javax/faces/component/UIComponent.html#CURRENT_COMPOSITE_COMPONENT">CURRENT_COMPOSITE_COMPONENT</A>, <A HREF="../../../javax/faces/component/UIComponent.html#FACETS_KEY">FACETS_KEY</A>, <A HREF="../../../javax/faces/component/UIComponent.html#VIEW_LOCATION_KEY">VIEW_LOCATION_KEY</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_javax.faces.component.NamingContainer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from interface javax.faces.component.<A HREF="../../../javax/faces/component/NamingContainer.html" title="interface in javax.faces.component">NamingContainer</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../javax/faces/component/NamingContainer.html#SEPARATOR_CHAR">SEPARATOR_CHAR</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../javax/faces/component/UINamingContainer.html#UINa

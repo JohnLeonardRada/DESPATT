@@ -1,0 +1,56 @@
+accounting for initial capacity
+ and perhaps load factor).
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/type/CollectionType.html#instantiate(int)">instantiate</A></CODE> in class <CODE><A HREF="../../../org/hibernate/type/CollectionType.html" title="class in org.hibernate.type">CollectionType</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>anticipatedType</CODE> - The anticipated size of the instaniated collection
+ after we are done populating it.
+<DT><B>Returns:</B><DD>A newly instantiated collection to be wrapped.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getElementsIterator(java.lang.Object)"><!-- --></A><H3>
+getElementsIterator</H3>
+<PRE>
+public <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A> <B>getElementsIterator</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;collection)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../org/hibernate/type/CollectionType.html#getElementsIterator(java.lang.Object)">CollectionType</A></CODE></B></DD>
+<DD>Get an iterator over the element set of the collection in POJO mode
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../org/hibernate/type/CollectionType.html#getElementsIterator(java.lang.Object)">getElementsIterator</A></CODE> in class <CODE><A HREF="../../../org/hibernate/type/CollectionType.html" title="class in org.hibernate.type">CollectionType</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>collection</CODE> - The collection to be iterated
+<DT><B>Returns:</B><DD>The iterator.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="contains(java.lang.Object, java.lang.Object, org.hibernate.engine.SessionImplementor)"><!-- --></A><H3>
+contains</H3>
+<PRE>
+public boolean <B>contains</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;collection,
+                        <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;entity,
+                        <A HREF="../../../org/hibernate/engine/SessionImplementor.html" title="interface in org.hibernate.engine">SessionImplementor</A>&nbsp;session)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../org/hibernate/type/CollectionType.html#contains(java.lang.Object, java.lang.Object, org.hibernate.engine.SessionImplementor)">contains</A></CODE> in class <CODE><A HREF="../../../org/hibernate/type/CollectionType.html" title="class in org.hibernate.type">CollectionType</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="indexOf(java.lang.Object, java.lang.Object)"><!-- --></A><H3>
+indexOf</H3>
+<PRE>
+public <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>indexOf</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;collection,
+                      <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;entity)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../org/hibernate/type/CollectionType.html#indexOf(java.lang.Object, java.lang.Object

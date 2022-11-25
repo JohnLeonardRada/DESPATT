@@ -1,0 +1,278 @@
+PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#add(org.hibernate.criterion.Criterion)">Criteria</A></CODE></B></DD>
+<DD>Add a <A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion"><CODE>restriction</CODE></A> to constrain the results to be
+ retrieved.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#add(org.hibernate.criterion.Criterion)">add</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>expression</CODE> - The <A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion"><CODE>criterion</CODE></A> object representing the
+ restriction to be applied.
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addOrder(org.hibernate.criterion.Order)"><!-- --></A><H3>
+addOrder</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>addOrder</B>(<A HREF="../../../org/hibernate/criterion/Order.html" title="class in org.hibernate.criterion">Order</A>&nbsp;ordering)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#addOrder(org.hibernate.criterion.Order)">Criteria</A></CODE></B></DD>
+<DD>Add an <A HREF="../../../org/hibernate/criterion/Order.html" title="class in org.hibernate.criterion"><CODE>ordering</CODE></A> to the result set.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#addOrder(org.hibernate.criterion.Order)">addOrder</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>ordering</CODE> - The <A HREF="../../../org/hibernate/criterion/Order.html" title="class in org.hibernate.criterion"><CODE>order</CODE></A> object representing an ordering
+ to be applied to the results.
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFetchMode(java.lang.String)"><!-- --></A><H3>
+getFetchMode</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/FetchMode.html" title="class in org.hibernate">FetchMode</A> <B>getFetchMode</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFetchMode(java.lang.String, org.hibernate.FetchMode)"><!-- --></A><H3>
+setFetchMode</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>setFetchMode</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                             <A HREF="../../../org/hibernate/FetchMode.html" title="class in org.hibernate">FetchMode</A>&nbsp;mode)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#setFetchMode(java.lang.String, org.hibernate.FetchMode)">Criteria</A></CODE></B></DD>
+<DD>Specify an association fetching strategy for an association or a
+ collection of values.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#setFetchMode(java.lang.String, org.hibernate.FetchMode)">setFetchMode</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - a dot seperated property path<DD><CODE>mode</CODE> - The fetch mode for the referenced association
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLockMode(org.hibernate.LockMode)"><!-- --></A><H3>
+setLockMode</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>setLockMode</B>(<A HREF="../../../org/hibernate/LockMode.html" title="class in org.hibernate">LockMode</A>&nbsp;lockMode)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#setLockMode(org.hibernate.LockMode)">Criteria</A></CODE></B></DD>
+<DD>Set the lock mode of the current entity
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#setLockMode(org.hibernate.LockMode)">setLockMode</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lockMode</CODE> - The lock mode to be applied
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLockMode(java.lang.String, org.hibernate.LockMode)"><!-- --></A><H3>
+setLockMode</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>setLockMode</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                            <A HREF="../../../org/hibernate/LockMode.html" title="class in org.hibernate">LockMode</A>&nbsp;lockMode)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#setLockMode(java.lang.String, org.hibernate.LockMode)">Criteria</A></CODE></B></DD>
+<DD>Set the lock mode of the aliased entity
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#setLockMode(java.lang.String, org.hibernate.LockMode)">setLockMode</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>alias</CODE> - The previously assigned alias representing the entity to
+                        which the given lock mode should apply.<DD><CODE>lockMode</CODE> - The lock mode to be applied
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAlias(java.lang.String, java.lang.String)"><!-- --></A><H3>
+createAlias</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createAlias</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createAlias(java.lang.String, java.lang.String)">Criteria</A></CODE></B></DD>
+<DD>Join an association, assigning an alias to the joined association.
+ <p/>
+ Functionally equivalent to <A HREF="../../../org/hibernate/Criteria.html#createAlias(java.lang.String, java.lang.String, int)"><CODE>Criteria.createAlias(String, String, int)</CODE></A> using
+ <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#INNER_JOIN"><CODE>CriteriaSpecification.INNER_JOIN</CODE></A> for the joinType.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#createAlias(java.lang.String, java.lang.String)">createAlias</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - A dot-seperated property path<DD><CODE>alias</CODE> - The alias to assign to the joined association (for later reference).
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAlias(java.lang.String, java.lang.String, int)"><!-- --></A><H3>
+createAlias</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createAlias</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                            int&nbsp;joinType)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createAlias(java.lang.String, java.lang.String, int)">Criteria</A></CODE></B></DD>
+<DD>Join an association using the specified join-type, assigning an alias
+ to the joined association.
+ <p/>
+ The joinType is expected to be one of <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#INNER_JOIN"><CODE>CriteriaSpecification.INNER_JOIN</CODE></A> (the default),
+ <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#FULL_JOIN"><CODE>CriteriaSpecification.FULL_JOIN</CODE></A>, or <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#LEFT_JOIN"><CODE>CriteriaSpecification.LEFT_JOIN</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#createAlias(java.lang.String, java.lang.String, int)">createAlias</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - A dot-seperated property path<DD><CODE>alias</CODE> - The alias to assign to the joined association (for later reference).<DD><CODE>joinType</CODE> - The type of join to use.
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAlias(java.lang.String, java.lang.String, int, org.hibernate.criterion.Criterion)"><!-- --></A><H3>
+createAlias</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createAlias</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                            <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                            int&nbsp;joinType,
+                            <A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A>&nbsp;withClause)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createAlias(java.lang.String, java.lang.String, int, org.hibernate.criterion.Criterion)">Criteria</A></CODE></B></DD>
+<DD>Join an association using the specified join-type, assigning an alias
+ to the joined association.
+ <p/>
+ The joinType is expected to be one of <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#INNER_JOIN"><CODE>CriteriaSpecification.INNER_JOIN</CODE></A> (the default),
+ <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#FULL_JOIN"><CODE>CriteriaSpecification.FULL_JOIN</CODE></A>, or <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#LEFT_JOIN"><CODE>CriteriaSpecification.LEFT_JOIN</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#createAlias(java.lang.String, java.lang.String, int, org.hibernate.criterion.Criterion)">createAlias</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - A dot-seperated property path<DD><CODE>alias</CODE> - The alias to assign to the joined association (for later reference).<DD><CODE>joinType</CODE> - The type of join to use.<DD><CODE>withClause</CODE> - The criteria to be added to the join condition (<tt>ON</tt> clause)
+<DT><B>Returns:</B><DD>this (for method chaining)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCriteria(java.lang.String)"><!-- --></A><H3>
+createCriteria</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createCriteria</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String)">Criteria</A></CODE></B></DD>
+<DD>Create a new <tt>Criteria</tt>, "rooted" at the associated entity.
+ <p/>
+ Functionally equivalent to <A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, int)"><CODE>Criteria.createCriteria(String, int)</CODE></A> using
+ <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#INNER_JOIN"><CODE>CriteriaSpecification.INNER_JOIN</CODE></A> for the joinType.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String)">createCriteria</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - A dot-seperated property path
+<DT><B>Returns:</B><DD>the created "sub criteria"</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCriteria(java.lang.String, int)"><!-- --></A><H3>
+createCriteria</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createCriteria</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                               int&nbsp;joinType)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, int)">Criteria</A></CODE></B></DD>
+<DD>Create a new <tt>Criteria</tt>, "rooted" at the associated entity, using the
+ specified join type.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, int)">createCriteria</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - A dot-seperated property path<DD><CODE>joinType</CODE> - The type of join to use.
+<DT><B>Returns:</B><DD>the created "sub criteria"</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCriteria(java.lang.String, java.lang.String)"><!-- --></A><H3>
+createCriteria</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createCriteria</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                               <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, java.lang.String)">Criteria</A></CODE></B></DD>
+<DD>Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+ assigning the given alias.
+ <p/>
+ Functionally equivalent to <A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, java.lang.String, int)"><CODE>Criteria.createCriteria(String, String, int)</CODE></A> using
+ <A HREF="../../../org/hibernate/criterion/CriteriaSpecification.html#INNER_JOIN"><CODE>CriteriaSpecification.INNER_JOIN</CODE></A> for the joinType.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, java.lang.String)">createCriteria</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - A dot-seperated property path<DD><CODE>alias</CODE> - The alias to assign to the joined association (for later reference).
+<DT><B>Returns:</B><DD>the created "sub criteria"</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCriteria(java.lang.String, java.lang.String, int)"><!-- --></A><H3>
+createCriteria</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createCriteria</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                               <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                               int&nbsp;joinType)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, java.lang.String, int)">Criteria</A></CODE></B></DD>
+<DD>Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+ assigning the given alias and using the specified join type.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, java.lang.String, int)">createCriteria</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>associationPath</CODE> - A dot-seperated property path<DD><CODE>alias</CODE> - The alias to assign to the joined association (for later reference).<DD><CODE>joinType</CODE> - The type of join to use.
+<DT><B>Returns:</B><DD>the created "sub criteria"</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCriteria(java.lang.String, java.lang.String, int, org.hibernate.criterion.Criterion)"><!-- --></A><H3>
+createCriteria</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Criteria.html" title="interface in org.hibernate">Criteria</A> <B>createCriteria</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;associationPath,
+                               <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                               int&nbsp;joinType,
+                               <A HREF="../../../org/hibernate/criterion/Criterion.html" title="interface in org.hibernate.criterion">Criterion</A>&nbsp;withClause)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../org/hibernate/Criteria.html#createCriteria(java.lang.String, java.lang.String, int, org.hibernate.criterion.Criterion)">Criteria</A></CODE></B></DD>
+<DD>Create a new <tt>Criteria</tt>, "rooted" at the associated entity,
+ assigning the given alias and using the specified join type.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/Criter

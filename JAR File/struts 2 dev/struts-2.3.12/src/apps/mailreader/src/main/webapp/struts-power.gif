@@ -1,0 +1,52 @@
+ String getText(String key, String defaultValue, List<?> args, ValueStack stack) {
+        return getTextProvider().getText(key, defaultValue, args, stack);
+    }
+
+    public String getText(String key, String defaultValue, String[] args, ValueStack stack) {
+        return getTextProvider().getText(key, defaultValue, args, stack);
+    }
+
+    /**
+     * Dedicated method to support I10N and conversion errors
+     *
+     * @param key message which contains formatting string
+     * @param expr that should be formatted
+     * @return formatted expr with format specified by key
+     */
+    public String getFormatted(String key, String expr) {
+        Map<String, Object> conversionErrors = ActionContext.getContext().getConversionErrors();
+        if (conversionErrors.containsKey(expr)) {
+            String[] vals = (String[]) conversionErrors.get(expr);
+            return vals[0];
+        } else {
+            final ValueStack valueStack = ActionContext.getContext().getValueStack();
+            final Object val = valueStack.findValue(expr);
+            return getText(key, Arrays.asList(val));
+        }
+    }
+
+    public ResourceBundle getTexts() {
+        return getTextProvider().getTexts();
+    }
+
+    public ResourceBundle getTexts(String aBundleName) {
+        return getTextProvider().getTexts(aBundleName);
+    }
+
+    public void addActionError(String anErrorMessage) {
+        validationAware.addActionError(anErrorMessage);
+    }
+
+    public void addActionMessage(String aMessage) {
+        validationAware.addActionMessage(aMessage);
+    }
+
+    public void addFieldError(String fieldName, String errorMessage) {
+        validationAware.addFieldError(fieldName, errorMessage);
+    }
+
+    public String input() throws Exception {
+        return INPUT;
+    }
+
+    public String doDef

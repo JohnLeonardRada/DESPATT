@@ -1,0 +1,63 @@
+me = actionName;
+        this.methodName = methodName;
+        this.skipActions = skipActions;
+    }
+
+
+    /**
+     * @param actionProxyFactory the actionProxyFactory to set
+     */
+    @Inject
+    public void setActionProxyFactory(ActionProxyFactory actionProxyFactory) {
+        this.actionProxyFactory = actionProxyFactory;
+    }
+
+    /**
+     * Set the action name.
+     *
+     * @param actionName The action name.
+     */
+    public void setActionName(String actionName) {
+        this.actionName = actionName;
+    }
+
+    /**
+     * sets the namespace of the Action that we're chaining to.  if namespace
+     * is null, this defaults to the current namespace.
+     *
+     * @param namespace the name of the namespace we're chaining to
+     */
+    public void setNamespace(String namespace) {
+        this.namespace = namespace;
+    }
+
+    /**
+     * Set the list of actions to skip.
+     * To test if an action should not throe an infinite recursion,
+     * only the action name is used, not the namespace.
+     *
+     * @param actions The list of action name separated by a white space.
+     */
+    public void setSkipActions(String actions) {
+        this.skipActions = actions;
+    }
+
+
+    public void setMethod(String method) {
+        this.methodName = method;
+    }
+
+    public ActionProxy getProxy() {
+        return proxy;
+    }
+
+    /**
+     * Get the XWork chain history.
+     * The stack is a list of <code>namespace/action!method</code> keys.
+     */
+    public static LinkedList<String> getChainHistory() {
+        LinkedList<String> chainHistory = (LinkedList<String>) ActionContext.getContext().get(CHAIN_HISTORY);
+        //  Add if not exists
+        if (chainHistory == null) {
+            chainHistory = new LinkedList<String>();
+            ActionContext.getContext().put(CHA

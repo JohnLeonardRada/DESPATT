@@ -1,0 +1,922 @@
+# translation of performance.po to
+# Michael H. Smith <mhideo@redhat.com>, 2007.
+# Angela Garcia <agarcia@redhat.com>, 2009, 2010.
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+# translation of Collection_Mapping.po to
+msgid ""
+msgstr ""
+"Project-Id-Version: performance\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-07-20 21:02+0000\n"
+"PO-Revision-Date: 2010-03-17 10:28+1000\n"
+"Last-Translator: Angela Garcia <agarcia@redhat.com>\n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Tag: title
+#: performance.xml:31
+#, no-c-format
+msgid "Improving performance"
+msgstr "Mejoramiento del rendimiento"
+
+#. Tag: title
+#: performance.xml:34
+#, no-c-format
+msgid "Fetching strategies"
+msgstr "Estrategias de recuperación"
+
+#. Tag: para
+#: performance.xml:36
+#, no-c-format
+msgid ""
+"Hibernate uses a <emphasis>fetching strategy</emphasis> to retrieve "
+"associated objects if the application needs to navigate the association. "
+"Fetch strategies can be declared in the O/R mapping metadata, or over-ridden "
+"by a particular HQL or <literal>Criteria</literal> query."
+msgstr ""
+"Hibernate utiliza una <emphasis>estrategia de recuperación</emphasis> para "
+"recuperar los objetos asociados cuando la aplicación necesita navegar la "
+"asociación. Las estrategias de recuperación se pueden declarar en los "
+"metadatos de mapeo O/R, o se pueden sobrescribir por medio de una HQL "
+"particular o una petición <literal>Criteria</literal>."
+
+#. Tag: para
+#: performance.xml:42
+#, no-c-format
+msgid "Hibernate3 defines the following fetching strategies:"
+msgstr "Hibernate3 define las siguientes estrategias de recuperación:"
+
+#. Tag: para
+#: performance.xml:46
+#, no-c-format
+msgid ""
+"<emphasis>Join fetching</emphasis>: Hibernate retrieves the associated "
+"instance or collection in the same <literal>SELECT</literal>, using an "
+"<literal>OUTER JOIN</literal>."
+msgstr ""
+"<emphasis>Recuperación por unión (join fetching)</emphasis>: Hibernate "
+"recupera la instancia asociada o la colección en el mismo <literal>SELECT</"
+"literal>, utilizando un <literal>OUTER JOIN</literal>."
+
+#. Tag: para
+#: performance.xml:53
+#, no-c-format
+msgid ""
+"<emphasis>Select fetching</emphasis>: a second <literal>SELECT</literal> is "
+"used to retrieve the associated entity or collection. Unless you explicitly "
+"disable lazy fetching by specifying <literal>lazy=\"false\"</literal>, this "
+"second select will only be executed when you access the association."
+msgstr ""
+"<emphasis>Recuperación por selección (select fetching)</emphasis>: se "
+"utiliza un segundo <literal>SELECT</literal> para recuperar la entidad o "
+"colección asocidas. A menos que deshabilite explícitamente la recuperación "
+"perezosa especificando <literal>lazy=\"false\"</literal>, la segunda "
+"selección sólo será ejecutada cuando acceda a la asociación."
+
+#. Tag: para
+#: performance.xml:61
+#, no-c-format
+msgid ""
+"<emphasis>Subselect fetching</emphasis>: a second <literal>SELECT</literal> "
+"is used to retrieve the associated collections for all entities retrieved in "
+"a previous query or fetch. Unless you explicitly disable lazy fetching by "
+"specifying <literal>lazy=\"false\"</literal>, this second select will only "
+"be executed when you access the association."
+msgstr ""
+"<emphasis>Recuperación por subselección (subselect fetching)</emphasis>: se "
+"utiliza un segundo <literal>SELECT</literal> para recuperar las colecciones "
+"asociadas de todas las entidades recuperadas en una consulta o recuperación "
+"previa. A menos de que deshabilite explícitamente la recuperación perezosa "
+"especificando <literal>lazy=\"false\"</literal>, esta segunda selección sólo "
+"se ejecutará cuando acceda a la asociación."
+
+#. Tag: para
+#: performance.xml:70
+#, no-c-format
+msgid ""
+"<emphasis>Batch fetching</emphasis>: an optimization strategy for select "
+"fetching. Hibernate retrieves a batch of entity instances or collections in "
+"a single <literal>SELECT</literal> by specifying a list of primary or "
+"foreign keys."
+msgstr ""
+"<emphasis>Recuperación en lote</emphasis>: una estrategia de optimización "
+"para la recuperación por selección. Hibernate recupera un lote de instancias "
+"de entidad o colecciones en un solo <literal>SELECT</literal>, especificando "
+"una lista de claves principales o de claves foráneas."
+
+#. Tag: para
+#: performance.xml:77
+#, no-c-format
+msgid "Hibernate also distinguishes between:"
+msgstr "Hibernate también distingue entre:"
+
+#. Tag: para
+#: performance.xml:81
+#, no-c-format
+msgid ""
+"<emphasis>Immediate fetching</emphasis>: an association, collection or "
+"attribute is fetched immediately when the owner is loaded."
+msgstr ""
+"<emphasis>Recuperación inmediata</emphasis>: una asociación, colección o "
+"atributo se recupera inmediatamente cuando se carga el dueño."
+
+#. Tag: para
+#: performance.xml:87
+#, no-c-format
+msgid ""
+"<emphasis>Lazy collection fetching</emphasis>: a collection is fetched when "
+"the application invokes an operation upon that collection. This is the "
+"default for collections."
+msgstr ""
+"<emphasis>Recuperación perezosa de colecciones</emphasis>: una colección se "
+"recupera cuando la aplicación invoca una operación sobre esa colección. Este "
+"es el valor predeterminado para las colecciones."
+
+#. Tag: para
+#: performance.xml:93
+#, no-c-format
+msgid ""
+"<emphasis>\"Extra-lazy\" collection fetching</emphasis>: individual elements "
+"of the collection are accessed from the database as needed. Hibernate tries "
+"not to fetch the whole collection into memory unless absolutely needed. It "
+"is suitable for large collections."
+msgstr ""
+"<emphasis>Recuperación de colección \"extra-perezoza\" </emphasis>: se "
+"accede a elementos individuales desde la base de datos cuando se necesita. "
+"Hibernate intenta no recuperar toda la colección en la memoria a menos de "
+"que sea absolutamente necesario. Esto es apropiado para colecciones muy "
+"grandes."
+
+#. Tag: para
+#: performance.xml:101
+#, no-c-format
+msgid ""
+"<emphasis>Proxy fetching</emphasis>: a single-valued association is fetched "
+"when a method other than the identifier getter is invoked upon the "
+"associated object."
+msgstr ""
+"<emphasis>Recuperación por proxy</emphasis>: una asociación monovaluada se "
+"recupera cuando se invoca un método que no sea el getter del identificador "
+"sobre el objeto asociado."
+
+#. Tag: para
+#: performance.xml:107
+#, no-c-format
+msgid ""
+"<emphasis>\"No-proxy\" fetching</emphasis>: a single-valued association is "
+"fetched when the instance variable is accessed. Compared to proxy fetching, "
+"this approach is less lazy; the association is fetched even when only the "
+"identifier is accessed. It is also more transparent, since no proxy is "
+"visible to the application. This approach requires buildtime bytecode "
+"instrumentation and is rarely necessary."
+msgstr ""
+"<emphasis> Recuperación \"no-proxy\" </emphasis>: una asociación monovaluada "
+"se recupera cuando se accede a la variable de la instancia. Comparado con la "
+"recuperación por proxy, este enfoque es menos perezozo; la asociación se "
+"recupera cuando se accede sólamente al identificador. También es más "
+"transparente ya que para la aplicación no hay proxies visibles. Este enfoque "
+"requiere instrumentación del código byte del tiempo estimado de construcción "
+"y se necesita muy raramente."
+
+#. Tag: para
+#: performance.xml:117
+#, no-c-format
+msgid ""
+"<emphasis>Lazy attribute fetching</emphasis>: an attribute or single valued "
+"association is fetched when the instance variable is accessed. This approach "
+"requires buildtime bytecode instrumentation and is rarely necessary."
+msgstr ""
+"<emphasis>Recuperación perezosa de atributos</emphasis>: un atributo o una "
+"asociación monovaluada se recuperan cuando se accede a la variable de la "
+"instancia. Este enfoque requiere instrumentación del código byte en tiempo "
+"estimado de construcción y se necesita muy raramente."
+
+#. Tag: para
+#: performance.xml:124
+#, no-c-format
+msgid ""
+"We have two orthogonal notions here: <emphasis>when</emphasis> is the "
+"association fetched and <emphasis>how</emphasis> is it fetched. It is "
+"important that you do not confuse them. We use <literal>fetch</literal> to "
+"tune performance. We can use <literal>lazy</literal> to define a contract "
+"for what data is always available in any detached instance of a particular "
+"class."
+msgstr ""
+"Aquí tenemos dos nociones ortogonales: <emphasis>cuándo</emphasis> se "
+"recupera la aplicación, y <emphasis>cómo</emphasis> se recupera. Es "
+"importante que no las confunda. Utilizamos <literal>fetch</literal> para "
+"afinar el rendimiento. Podemos usar <literal>lazy</literal> para definir un "
+"contrato sobre qué datos están siempre disponibles en cualquier instancia "
+"separada de una clase en particular."
+
+#. Tag: title
+#: performance.xml:132
+#, no-c-format
+msgid "Working with lazy associations"
+msgstr "Trabajo con asociaciones perezosas"
+
+#. Tag: para
+#: performance.xml:134
+#, no-c-format
+msgid ""
+"By default, Hibernate3 uses lazy select fetching for collections and lazy "
+"proxy fetching for single-valued associations. These defaults make sense for "
+"most associations in the majority of applications."
+msgstr ""
+"Por defecto, Hibernate3 usa una recuperación perezosa por selección para "
+"colecciones y una recuperación por proxy perezosa para asociaciones "
+"monovaluadas. Estas políticas predeterminadas tienen sentido para casi todas "
+"las asociaciones en la mayoría de las aplicaciones."
+
+#. Tag: para
+#: performance.xml:138
+#, no-c-format
+msgid ""
+"If you set <literal>hibernate.default_batch_fetch_size</literal>, Hibernate "
+"will use the batch fetch optimization for lazy fetching. This optimization "
+"can also be enabled at a more granular level."
+msgstr ""
+"Si configura <literal>hibernate.default_batch_fetch_size</literal>, "
+"Hibernate utilizará la optimización de recuperación en lotes para "
+"recuperación perezosa. Esta optimización también se puede habilitar en un "
+"nivel más detallado."
+
+#. Tag: para
+#: performance.xml:142
+#, no-c-format
+msgid ""
+"Please be aware that access to a lazy association outside of the context of "
+"an open Hibernate session will result in an exception. For example:"
+msgstr ""
+"Note que el acceder a una asociación perezosa fuera del contexto de una "
+"sesión de Hibernate abierta resultará en una excepción. Por ejemplo:"
+
+#. Tag: programlisting
+#: performance.xml:146
+#, no-c-format
+msgid ""
+"s = sessions.openSession();\n"
+"Transaction tx = s.beginTransaction();\n"
+"            \n"
+"User u = (User) s.createQuery(\"from User u where u.name=:userName\")\n"
+"    .setString(\"userName\", userName).uniqueResult();\n"
+"Map permissions = u.getPermissions();\n"
+"\n"
+"tx.commit();\n"
+"s.close();\n"
+"\n"
+"Integer accessLevel = (Integer) permissions.get(\"accounts\");  // Error!"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:148
+#, no-c-format
+msgid ""
+"Since the permissions collection was not initialized when the "
+"<literal>Session</literal> was closed, the collection will not be able to "
+"load its state. <emphasis>Hibernate does not support lazy initialization for "
+"detached objects</emphasis>. This can be fixed by moving the code that reads "
+"from the collection to just before the transaction is committed."
+msgstr ""
+"Ya que la colección de permisos no fue inicializada cuando se cerró la "
+"<literal>Session</literal>, la colección no será capaz de cargar su estado. "
+"<emphasis>Hibernate no soporta la inicialización perezosa de objetos "
+"separados</emphasis>. La solución es mover el código que lee de la colección "
+"a justo antes de que se guarde la transacción."
+
+#. Tag: para
+#: performance.xml:155
+#, no-c-format
+msgid ""
+"Alternatively, you can use a non-lazy collection or association, by "
+"specifying <literal>lazy=\"false\"</literal> for the association mapping. "
+"However, it is intended that lazy initialization be used for almost all "
+"collections and associations. If you define too many non-lazy associations "
+"in your object model, Hibernate will fetch the entire database into memory "
+"in every transaction."
+msgstr ""
+"Opcionalmente puede utilizar una colección no perezosa o asociación, "
+"especificando <literal>lazy=\"false\"</literal> para el mapeo de asociación. "
+"Sin embargo, el propósito de la inicialización perezosa es que se utilice "
+"para casi todas las colecciones y asociaciones. ¡Si define demasiadas "
+"asociaciones no perezosas en su modelo de objetos, Hibernate recuperará la "
+"base de datos entera en toda transacción."
+
+#. Tag: para
+#: performance.xml:162
+#, no-c-format
+msgid ""
+"On the other hand, you can use join fetching, which is non-lazy by nature, "
+"instead of select fetching in a particular transaction. We will now explain "
+"how to customize the fetching strategy. In Hibernate3, the mechanisms for "
+"choosing a fetch strategy are identical for single-valued associations and "
+"collections."
+msgstr ""
+"Por otro lado, puede utilizar la recuperación por unión, la cual no es "
+"perezosa por naturaleza, en lugar de la recuperación por selección en una "
+"transacción en particular. Veremos ahora cómo personalizar la estrategia de "
+"recuperación. En Hibernate3, los mecanismos para elegir una estrategia de "
+"recuperación son idénticas para las de las asociaciones monovaluadas y las "
+"colecciones."
+
+#. Tag: title
+#: performance.xml:170
+#, no-c-format
+msgid "Tuning fetch strategies"
+msgstr "Afinación de las estrategias de recuperación"
+
+#. Tag: para
+#: performance.xml:172
+#, no-c-format
+msgid ""
+"Select fetching (the default) is extremely vulnerable to N+1 selects "
+"problems, so we might want to enable join fetching in the mapping document:"
+msgstr ""
+"La recuperación por selección (la preestablecida) es extremadamente "
+"vulnerable a problemas de selección N+1, de modo que puede que queramos "
+"habilitar la recuperación por unión (join fetching) en el documento de mapeo:"
+
+#. Tag: programlisting
+#: performance.xml:176
+#, no-c-format
+msgid ""
+"&lt;set name=\"permissions\"\n"
+"            fetch=\"join\"&gt;\n"
+"    &lt;key column=\"userId\"/&gt;\n"
+"    &lt;one-to-many class=\"Permission\"/&gt;\n"
+"&lt;/set"
+msgstr ""
+
+#. Tag: programlisting
+#: performance.xml:178
+#, no-c-format
+msgid "&lt;many-to-one name=\"mother\" class=\"Cat\" fetch=\"join\"/&gt;"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:180
+#, no-c-format
+msgid ""
+"The <literal>fetch</literal> strategy defined in the mapping document "
+"affects:"
+msgstr ""
+"La estrategia de <literal>recuperación</literal> definida en el documento de "
+"mapeo afecta a:"
+
+#. Tag: para
+#: performance.xml:185
+#, no-c-format
+msgid "retrieval via <literal>get()</literal> or <literal>load()</literal>"
+msgstr ""
+"las recuperaciones por medio de <literal>get()</literal> o <literal>load()</"
+"literal>"
+
+#. Tag: para
+#: performance.xml:190
+#, no-c-format
+msgid "retrieval that happens implicitly when an association is navigated"
+msgstr ""
+"las recuperaciones que ocurren implícitamente cuando se navega una "
+"asociación (recuperación perezosa)"
+
+#. Tag: para
+#: performance.xml:195
+#, no-c-format
+msgid "<literal>Criteria</literal> queries"
+msgstr "las consultas de <literal>Criteria</literal>"
+
+#. Tag: para
+#: performance.xml:199
+#, no-c-format
+msgid "HQL queries if <literal>subselect</literal> fetching is used"
+msgstr ""
+"las consultas HQL si se utiliza la recuperación <literal>subselect</literal>"
+
+#. Tag: para
+#: performance.xml:204
+#, no-c-format
+msgid ""
+"Irrespective of the fetching strategy you use, the defined non-lazy graph is "
+"guaranteed to be loaded into memory. This might, however, result in several "
+"immediate selects being used to execute a particular HQL query."
+msgstr ""
+"Sin importar que estrategia de recuperación utilice, se garantiza que la "
+"gráfica no-perezoza definida será cargada en la memoria. Sin embargo, esto "
+"puede causar la utilización de varias selecciones inmediatas para ejecutar "
+"una consulta HQL en particular."
+
+#. Tag: para
+#: performance.xml:209
+#, no-c-format
+msgid ""
+"Usually, the mapping document is not used to customize fetching. Instead, we "
+"keep the default behavior, and override it for a particular transaction, "
+"using <literal>left join fetch</literal> in HQL. This tells Hibernate to "
+"fetch the association eagerly in the first select, using an outer join. In "
+"the <literal>Criteria</literal> query API, you would use "
+"<literal>setFetchMode(FetchMode.JOIN)</literal>."
+msgstr ""
+"Usualmente, no utilizamos el documento de mapeo para personalizar la "
+"recuperación. En cambio, mantenemos el comportamiento por defecto y lo "
+"sobrescribimos para una transacción en particular, utilizando <literal>left "
+"join fetch</literal> en HQL. Esto le dice a Hibernate que recupere la "
+"asociación tempranamente en la primera selección, usando una unión externa. "
+"En la API de consulta de <literal>Criteria</literal>, usted utilizaría "
+"<literal>setFetchMode(FetchMode.JOIN)</literal>."
+
+#. Tag: para
+#: performance.xml:216
+#, no-c-format
+msgid ""
+"If you want to change the fetching strategy used by <literal>get()</literal> "
+"or <literal>load()</literal>, you can use a <literal>Criteria</literal> "
+"query. For example:"
+msgstr ""
+"Si quiere cambiar la estrategia de recuperación utilizada por <literal>get()"
+"</literal> o <literal>load()</literal>; utilice una consulta "
+"<literal>Criteria</literal>. Por ejemplo:"
+
+#. Tag: programlisting
+#: performance.xml:220
+#, no-c-format
+msgid ""
+"User user = (User) session.createCriteria(User.class)\n"
+"                .setFetchMode(\"permissions\", FetchMode.JOIN)\n"
+"                .add( Restrictions.idEq(userId) )\n"
+"                .uniqueResult();"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:222
+#, no-c-format
+msgid ""
+"This is Hibernate's equivalent of what some ORM solutions call a \"fetch plan"
+"\"."
+msgstr ""
+"Esto es el equivalente de Hibernate de lo que otras soluciones ORM denominan "
+"un \"plan de recuperación\"."
+
+#. Tag: para
+#: performance.xml:225
+#, no-c-format
+msgid ""
+"A completely different approach to problems with N+1 selects is to use the "
+"second-level cache."
+msgstr ""
+"Un enfoque completamente diferente de evitar problemas con selecciones N+1 "
+"es usar el caché de segundo nivel."
+
+#. Tag: title
+#: performance.xml:230
+#, no-c-format
+msgid "Single-ended association proxies"
+msgstr "Proxies de asociaciones de un sólo extremo"
+
+#. Tag: para
+#: performance.xml:232
+#, no-c-format
+msgid ""
+"Lazy fetching for collections is implemented using Hibernate's own "
+"implementation of persistent collections. However, a different mechanism is "
+"needed for lazy behavior in single-ended associations. The target entity of "
+"the association must be proxied. Hibernate implements lazy initializing "
+"proxies for persistent objects using runtime bytecode enhancement which is "
+"accessed via the CGLIB library."
+msgstr ""
+"La recuperación perezosa de colecciones está implementada utilizando la "
+"implementación de colecciones persistentes propia de Hibernate. Sin embargo, "
+"se necesita un mecanismo diferente para un comportamiento perezoso en las "
+"asociaciones de un sólo extremo. La entidad destino de la asociación se debe "
+"tratar con proxies. Hibernate implementa proxies de inicialización perezosa "
+"para objetos persistentes utilizando la mejora del código byte en tiempo de "
+"ejecución por medio de la biblioteca CGLIB)."
+
+#. Tag: para
+#: performance.xml:239
+#, no-c-format
+msgid ""
+"At startup, Hibernate3 generates proxies by default for all persistent "
+"classes and uses them to enable lazy fetching of <literal>many-to-one</"
+"literal> and <literal>one-to-one</literal> associations."
+msgstr ""
+"En el arranque, Hibernate3 genera proxies por defecto para todas las clases "
+"persistentes y los usa para habilitar la recuperación perezosa de "
+"asociaciones <literal>muchos-a-uno</literal> y <literal>uno-a-uno</literal>."
+
+#. Tag: para
+#: performance.xml:244
+#, no-c-format
+msgid ""
+"The mapping file may declare an interface to use as the proxy interface for "
+"that class, with the <literal>proxy</literal> attribute. By default, "
+"Hibernate uses a subclass of the class. <emphasis>The proxied class must "
+"implement a default constructor with at least package visibility. This "
+"constructor is recommended for all persistent classes</emphasis>."
+msgstr ""
+"El archivo de mapeo puede declarar una interfaz a utilizar como interfaz de "
+"proxy para esa clase, con el atributo <literal>proxy</literal>. Por defecto, "
+"Hibernate usa una subclase de la clase. <emphasis>La clase tratada con "
+"proxies debe implementar un constructor por defecto con al menos visibilidad "
+"de paquete. Recomendamos este constructor para todas las clases "
+"persistentes</emphasis>."
+
+#. Tag: para
+#: performance.xml:251
+#, no-c-format
+msgid ""
+"There are potential problems to note when extending this approach to "
+"polymorphic classes.For example:"
+msgstr ""
+"Hay problemas potenciales que se deben tener en cuenta al extender este "
+"enfoque a las clases polimórficas. Por ejemplo:"
+
+#. Tag: programlisting
+#: performance.xml:254
+#, no-c-format
+msgid ""
+"&lt;class name=\"Cat\" proxy=\"Cat\"&gt;\n"
+"    ......\n"
+"    &lt;subclass name=\"DomesticCat\"&gt;\n"
+"        .....\n"
+"    &lt;/subclass&gt;\n"
+"&lt;/class&gt;"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:256
+#, no-c-format
+msgid ""
+"Firstly, instances of <literal>Cat</literal> will never be castable to "
+"<literal>DomesticCat</literal>, even if the underlying instance is an "
+"instance of <literal>DomesticCat</literal>:"
+msgstr ""
+"Primero, las instancias de <literal>Cat</literal> nunca serán objeto de un "
+"cast a <literal>DomesticCat</literal>, incluso aunque la instancia "
+"subyacente sea una instancia de <literal>DomesticCat</literal>:"
+
+#. Tag: programlisting
+#: performance.xml:260
+#, no-c-format
+msgid ""
+"Cat cat = (Cat) session.load(Cat.class, id);  // instantiate a proxy (does "
+"not hit the db)\n"
+"if ( cat.isDomesticCat() ) {                  // hit the db to initialize "
+"the proxy\n"
+"    DomesticCat dc = (DomesticCat) cat;       // Error!\n"
+"    ....\n"
+"}"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:262
+#, no-c-format
+msgid "Secondly, it is possible to break proxy <literal>==</literal>:"
+msgstr "Segundo, es posible romper el proxy <literal>==</literal>:"
+
+#. Tag: programlisting
+#: performance.xml:265
+#, no-c-format
+msgid ""
+"Cat cat = (Cat) session.load(Cat.class, id);            // instantiate a Cat "
+"proxy\n"
+"DomesticCat dc = \n"
+"        (DomesticCat) session.load(DomesticCat.class, id);  // acquire new "
+"DomesticCat proxy!\n"
+"System.out.println(cat==dc);                            // false"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:267
+#, no-c-format
+msgid ""
+"However, the situation is not quite as bad as it looks. Even though we now "
+"have two references to different proxy objects, the underlying instance will "
+"still be the same object:"
+msgstr ""
+"Sin embargo, la situación no es en absoluto tan mala como parece. Aunque "
+"tenemos ahora dos referencias a objetos proxy diferentes, la instancia "
+"subyacente será aún el mismo objeto:"
+
+#. Tag: programlisting
+#: performance.xml:271
+#, no-c-format
+msgid ""
+"cat.setWeight(11.0);  // hit the db to initialize the proxy\n"
+"System.out.println( dc.getWeight() );  // 11.0"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:273
+#, no-c-format
+msgid ""
+"Third, you cannot use a CGLIB proxy for a <literal>final</literal> class or "
+"a class with any <literal>final</literal> methods."
+msgstr ""
+"Tercero, no puede usar un proxy CGLIB para una clase <literal>final</"
+"literal> o una clase con algún método <literal>final</literal>."
+
+#. Tag: para
+#: performance.xml:276
+#, no-c-format
+msgid ""
+"Finally, if your persistent object acquires any resources upon instantiation "
+"(e.g. in initializers or default constructor), then those resources will "
+"also be acquired by the proxy. The proxy class is an actual subclass of the "
+"persistent class."
+msgstr ""
+"Finalmente, si su objeto persistente adquiere cualquier recurso bajo "
+"instanciación (por ejemplo, en inicializadores o constructores por defecto), "
+"entonces esos recursos serán adquiridos también por el proxy. La clase del "
+"proxy es una subclase real de la clase persistente. "
+
+#. Tag: para
+#: performance.xml:281
+#, no-c-format
+msgid ""
+"These problems are all due to fundamental limitations in Java's single "
+"inheritance model. To avoid these problems your persistent classes must each "
+"implement an interface that declares its business methods. You should "
+"specify these interfaces in the mapping file where <literal>CatImpl</"
+"literal> implements the interface <literal>Cat</literal> and "
+"<literal>DomesticCatImpl</literal> implements the interface "
+"<literal>DomesticCat</literal>. For example:"
+msgstr ""
+"Estos problemas se deben a limitaciones fundamentales en el modelo de "
+"herencia única de Java. Si desea evitar estos problemas cada una de sus "
+"clases persistentes deben implementar una interfaz que declare sus métodos "
+"de negocio. Debe especificar estas interfaces en el archivo de mapeo en "
+"donde <literal>CatImpl</literal> implementa la interfaz <literal>Cat</"
+"literal> y <literal>DomesticCatImpl</literal> implementa la interfaz "
+"<literal>DomesticCat</literal>. Por ejemplo:"
+
+#. Tag: programlisting
+#: performance.xml:289
+#, no-c-format
+msgid ""
+"&lt;class name=\"CatImpl\" proxy=\"Cat\"&gt;\n"
+"    ......\n"
+"    &lt;subclass name=\"DomesticCatImpl\" proxy=\"DomesticCat\"&gt;\n"
+"        .....\n"
+"    &lt;/subclass&gt;\n"
+"&lt;/class&gt;"
+msgstr ""
+
+#. Tag: para
+#: performance.xml:291
+#, no-c-format
+msgid ""
+"Then proxies for instances of <literal>Cat</literal> and "
+"<literal>DomesticCat</literal> can be returned by <literal>load()</literal> "
+"or <literal>iterate()</literal>."
+msgstr ""
+"Entonces los proxies para las instancias de <literal>Cat</literal> y "
+"<literal>DomesticCat</literal> pueden ser retornadas por <literal>load()</"
+"literal> o <literal>iterate()</literal>."
+
+#. Tag: programlisting
+#: performance.xml:295
+#, no-c-format
+msgid ""
+"Cat cat = (Cat) session.load(CatImpl.class, catid);\n"
+"Iterator iter = session.createQuery(\"from CatImpl as cat where cat."
+"name='fritz'\").iterate();\n"
+"Cat fritz = (Cat) iter.next();"
+msgstr ""
+
+#. Tag: title
+#: performance.xml:298
+#, no-c-format
+msgid "Note"
+msgstr "Nota"
+
+#. Tag: para
+#: performance.xml:300
+#, no-c-format
+msgid "<literal>list()</literal> does not usually return proxies."
+msgstr "<literal>list()</literal> usualmente no retorna proxies."
+
+#. Tag: para
+#: performance.xml:304
+#, no-c-format
+msgid ""
+"Relationships are also lazily initialized. This means you must declare any "
+"properties to be of type <literal>Cat</literal>, not <literal>CatImpl</"
+"literal>."
+msgstr ""
+"Las relaciones también son inicializadas perezosamente. Esto significa que "
+"debe declarar cualquier propiedad como de tipo <literal>Cat</literal>, no "
+"<literal>CatImpl</literal>."
+
+#. Tag: para
+#: performance.xml:308
+#, no-c-format
+msgid ""
+"Certain operations do <emphasis>not</emphasis> require proxy initialization:"
+msgstr ""
+"Ciertas operaciones <emphasis>no</emphasis> requieren inicialización de "
+"proxies:"
+
+#. Tag: para
+#: performance.xml:313
+#, no-c-format
+msgid ""
+"<literal>equals()</literal>: if the persistent class does not override "
+"<literal>equals()</literal>"
+msgstr ""
+"<literal>equals()</literal>, si la clase persistente no sobrescribe "
+"<literal>equals()</literal> "
+
+#. Tag: para
+#: performance.xml:318
+#, no-c-format
+msgid ""
+"<literal>hashCode()</literal>: if the persistent class does not override "
+"<literal>hashCode()</literal>"
+msgstr ""
+"<literal>hashCode()</literal>, si la clase persistente no sobrescribe "
+"<literal>hashCode()</literal> "
+
+#. Tag: para
+#: performance.xml:323
+#, no-c-format
+msgid "The identifier getter method"
+msgstr "El método getter del identificador"
+
+#. Tag: para
+#: performance.xml:327
+#, no-c-format
+msgid ""
+"Hibernate will detect persistent classes that override <literal>equals()</"
+"literal> or <literal>hashCode()</literal>."
+msgstr ""
+"Hibernate detectará las clases persistentes que sobrescriban <literal>equals"
+"()</literal> o <literal>hashCode()</literal>."
+
+#. Tag: para
+#: performance.xml:330
+#, no-c-format
+msgid ""
+"By choosing <literal>lazy=\"no-proxy\"</literal> instead of the default "
+"<literal>lazy=\"proxy\"</literal>, you can avoid problems associated with "
+"typecasting. However, buildtime bytecode instrumentation is required, and "
+"all operations will result in immediate proxy initialization."
+msgstr ""
+"Al escoger <literal>lazy=\"no-proxy\"</literal> en vez del <literal>lazy="
+"\"proxy\"</literal> predeterminado, podemos evitar los problemas asociados "
+"con conversión de tipos (typecasting). Sin embargo, requiere la "
+"instrumentación de código byte en tiempo estimado de construcción y todas "
+"las operaciones resultarán en una inicialización de proxies inmediata."
+
+#. Tag: title
+#: performance.xml:338
+#, no-c-format
+msgid "Initializing collections and proxies"
+msgstr "Inicialización de colecciones y proxies"
+
+#. Tag: para
+#: performance.xml:340
+#, no-c-format
+msgid ""
+"A <literal>LazyInitializationException</literal> will be thrown by Hibernate "
+"if an uninitialized collection or proxy is accessed outside of the scope of "
+"the <literal>Session</literal>, i.e., when the entity owning the collection "
+"or having the reference to the proxy is in the detached state."
+msgstr ""
+"Hibernate lanzará una <literal>LazyInitializationException</literal> si se "
+"accede a una colección o proxy sin acceder fuera del ámbito de la "
+"<literal>Session</literal>, por ejemplo, cuando la entidad que posee la "
+"colección o que tiene la referencia al proxy esté en el estado separado."
+
+#. Tag: para
+#: performance.xml:346
+#, no-c-format
+msgid ""
+"Sometimes a proxy or collection needs to be initialized before closing the "
+"<literal>Session</literal>. You can force initialization by calling "
+"<literal>cat.getSex()</literal> or <literal>cat.getKittens().size()</"
+"literal>, for example. However, this can be confusing to readers of the code "
+"and it is not convenient for generic code."
+msgstr ""
+"A veces es necesario inicializar un proxy o una colección antes de cerrar la "
+"<literal>Session</literal>. Puede forzar la inicialización llamando a "
+"<literal>cat.getSex()</literal> o <literal>cat.getKittens().size()</"
+"literal>, por ejemplo. Sin embargo, esto puede ser confuso para los lectores "
+"del código y no es conveniente para el código genérico."
+
+#. Tag: para
+#: performance.xml:353
+#, no-c-format
+msgid ""
+"The static methods <literal>Hibernate.initialize()</literal> and "
+"<literal>Hibernate.isInitialized()</literal>, provide the application with a "
+"convenient way of working with lazily initialized collections or proxies. "
+"<literal>Hibernate.initialize(cat)</literal> will force the initialization "
+"of a proxy, <literal>cat</literal>, as long as its <literal>Session</"
+"literal> is still open. <literal>Hibernate.initialize( cat.getKittens() )</"
+"literal> has a similar effect for the collection of kittens."
+msgstr ""
+"Los métodos estáticos <literal>Hibernate.initialize()</literal> y "
+"<literal>Hibernate.isInitialized()</literal> proporcionan a la aplicación "
+"una forma conveniente de trabajar con colecciones o proxies inicializados "
+"perezosamente. <literal>Hibernate.initialize(cat)</literal> forzará la "
+"inicialización de un proxy, <literal>cat</literal>, en tanto su "
+"<literal>Session</literal> esté todavía abierta. <literal>Hibernate."
+"initialize( cat.getKittens() )</literal> tiene un efecto similar para la "
+"colección de gatitos. "
+
+#. Tag: para
+#: performance.xml:362
+#, no-c-format
+msgid ""
+"Another option is to keep the <literal>Session</literal> open until all "
+"required collections and proxies have been loaded. In some application "
+"architectures, particularly where the code that accesses data using "
+"Hibernate, and the code that uses it are in different application layers or "
+"different physical processes, it can be a problem to ensure that the "
+"<literal>Session</literal> is open when a collection is initialized. There "
+"are two basic ways to deal with this issue:"
+msgstr ""
+"Otra opción es mantener la <literal>Session</literal> abierta hasta que "
+"todas las colecciones y proxies necesarios hayan sido cargados. En algunas "
+"arquitecturas de aplicación, particularmente en aquellas donde el código que "
+"accede a los datos usando Hibernate, y el código que los utiliza están en "
+"capas de aplicación diferentes o procesos físicos diferentes, puede ser un "
+"problema asegurar que la <literal>Session</literal> esté abierta cuando se "
+"inicializa una colección. Existen dos formas básicas para abordar este tema: "
+
+#. Tag: para
+#: performance.xml:372
+#, no-c-format
+msgid ""
+"In a web-based application, a servlet filter can be used to close the "
+"<literal>Session</literal> only at the end of a user request, once the "
+"rendering of the view is complete (the <emphasis>Open Session in View</"
+"emphasis> pattern). Of course, this places heavy demands on the correctness "
+"of the exception handling of your application infrastructure. It is vitally "
+"important that the <literal>Session</literal> is closed and the transaction "
+"ended before returning to the user, even when an exception occurs during "
+"rendering of the view. See the Hibernate Wiki for examples of this \"Open "
+"Session in View\" pattern."
+msgstr ""
+"En una aplicación basada en la web se puede utilizar un filtro de servlets "
+"para cerrar la <literal>Session</literal> sólamente al final de una petición "
+"del usuario, una vez que la entrega de la vista esté completa (el patrón "
+"<emphasis>sesión abierta en vista (open session in view)</emphasis>). Por "
+"supuesto, estos sitios requieren una fuerte demanda de corrección del manejo "
+"de excepciones de la infraestructura de su aplicación. Es de una vital "
+"importancia que la <literal>Session</literal> esté cerrada y la transacción "
+"terminada antes de volver al usuario, incluso cuando ocurra una excepción "
+"durante le entrega de la vista. Refiérase a la Wiki de Hibernate para ver "
+"ejemplos de este patrón \"Open Session in View\" (sesión abierta en vista). "
+
+#. Tag: para
+#: performance.xml:385
+#, no-c-format
+msgid ""
+"In an application with a separate business tier, the business logic must "
+"\"prepare\" all collections that the web tier needs before returning. This "
+"means that the business tier should load all the data and return all the "
+"data already initialized to the presentation/web tier that is required for a "
+"particular use case. Usually, the application calls <literal>Hibernate."
+"initialize()</literal> for each collection that will be needed in the web "
+"tier (this call must occur before the session is closed) or retrieves the "
+"collection eagerly using a Hibernate query with a <literal>FETCH</literal> "
+"clause or a <literal>FetchMode.JOIN</literal> in <literal>Criteria</"
+"literal>. This is usually easier if you adopt the <emphasis>Command</"
+"emphasis> pattern instead of a <emphasis>Session Facade</emphasis>."
+msgstr ""
+"En una aplicación con una capa de negocios separada, la lógica empresarial "
+"tiene que \"preparar\" todas las colecciones que la capa web va a necesitar "
+"antes de retornar. Esto significa que la capa empresarial debe cargar todos "
+"los datos y devolver a la capa web/presentación todos los datos ya "
+"inicializados que se requieran para un caso de uso en particular. "
+"Usualmente, la aplicación llama a <literal>Hibernate.initialize()</literal> "
+"para cada colección que se necesitará en la capa web (esta llamada debe "
+"tener lugar antes de que se cierre la sesión) o recupera la colección "
+"tempranamente utilizando una consulta de Hibernate con una cláusula "
+"<literal>FETCH</literal> o una <literal>FetchMode.JOIN</literal> en "
+"<literal>Criteria</literal>. Usualmente, esto es más fácil si adopta el "
+"patrón <emphasis>Comando</emphasis> en vez de una <emphasis>Fachada de "
+"Sesión</emphasis>."
+
+#. Tag: para
+#: performance.xml:401
+#, no-c-format
+msgid ""
+"You can also attach a previously loaded object to a new <literal>Session</"
+"literal> with <literal>merge()</literal> or <literal>lock()</literal> before "
+"accessing uninitialized collections or other proxies. Hibernate does not, "
+"and certainly <emphasis>should</emphasis> not, do this automatically since "
+"it would introduce impromptu transaction semantics."
+msgstr ""
+"También puede adjuntar un objeto 

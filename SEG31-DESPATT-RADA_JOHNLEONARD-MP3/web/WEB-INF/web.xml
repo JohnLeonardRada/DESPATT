@@ -1,0 +1,29 @@
+rsion description as property entry.
+     * <p>
+     * Example:<br/>
+     * property.name = converter.className<br/>
+     * Collection_property.name = converter.className<br/>
+     * Map_property.name = converter.className
+     * KeyProperty_name = id
+     * </p>
+     *
+     * @return the conversion description as property entry.
+     */
+    public String asProperty() {
+        StringWriter sw = new StringWriter();
+        PrintWriter writer = null;
+        try {
+            writer = new PrintWriter(sw);
+            writer.print(rule);
+            writer.print(property);
+            writer.print("=");
+            if ( rule.startsWith(DefaultObjectTypeDeterminer.KEY_PROPERTY_PREFIX) && value != null && value.length() > 0 ) {
+                writer.print(value);
+            } else {
+                writer.print(typeConverter);
+            }
+        } finally {
+            if (writer != null) {
+                writer.flush();
+                writer.close();
+  

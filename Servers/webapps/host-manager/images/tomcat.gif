@@ -1,0 +1,10 @@
+ava.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(javax.persistence.Parameter, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(javax.persistence.Parameter, T)" title="class or interface in javax.persistence">setParameter</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(java.lang.String, java.util.Calendar, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(java.lang.String, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(java.lang.String, java.lang.Object)" title="class or interface in javax.persistence">setParameter</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.persistence.Query"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface javax.persistence.<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameter(int)" title="class or interface in javax.persistence">getParameter</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?

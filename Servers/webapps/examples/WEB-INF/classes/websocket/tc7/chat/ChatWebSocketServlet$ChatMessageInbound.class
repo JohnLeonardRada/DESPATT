@@ -1,0 +1,44 @@
+<FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A> in <A HREF="../../../../../org/hibernate/criterion/package-summary.html">org.hibernate.criterion</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/hibernate/criterion/package-summary.html">org.hibernate.criterion</A> that return <A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A></CODE></FONT></TD>
+<TD><CODE><B>RowCountProjection.</B><B><A HREF="../../../../../org/hibernate/criterion/RowCountProjection.html#getFunction(org.hibernate.criterion.CriteriaQuery)">getFunction</A></B>(<A HREF="../../../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A></CODE></FONT></TD>
+<TD><CODE><B>AggregateProjection.</B><B><A HREF="../../../../../org/hibernate/criterion/AggregateProjection.html#getFunction(org.hibernate.criterion.CriteriaQuery)">getFunction</A></B>(<A HREF="../../../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/hibernate/dialect/function/SQLFunction.html" title="interface in org.hibernate.dialect.function">SQLFunction</A></CODE></FONT></TD>
+<TD><CODE><B>AggregateProjection.</B><B><A HREF="../../../../../org/hibernate/criterion/AggregateProjection.html#getFunction(java.lang.String, org.hibernate.criterion.CriteriaQuery)">getFunction</A></B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;functionName,
+            <A HREF="../../../../../org/hibernate/criterion/CriteriaQuery.html" title="interface in org.hibernate.criterion">CriteriaQuery</A>&nbsp;criteriaQuery)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.hibernate.dialect"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../

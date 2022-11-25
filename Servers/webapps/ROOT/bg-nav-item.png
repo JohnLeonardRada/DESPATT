@@ -1,0 +1,28 @@
+p;&nbsp;Used to provide a context and services to the rendering.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/ejb/criteria/class-use/ExpressionImplementor.html#org.hibernate.ejb.criteria.predicate"><B>ExpressionImplementor</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TODO : javadoc</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/ejb/criteria/class-use/ParameterContainer.html#org.hibernate.ejb.criteria.predicate"><B>ParameterContainer</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contract for query components capable of eirther being a parameter or containing parameters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/ejb/criteria/class-use/ParameterRegistry.html#org.hibernate.ejb.criteria.predicate"><B>ParameterRegistry</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A registry for parameters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A HREF="../../../../org/hibernate/ejb/criteria/class-use/Renderable.html#org.hibernate.ejb.criteria.predicate"><B>Renderable</B></A></B>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TODO : javadoc</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><B><A H

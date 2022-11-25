@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.apache.struts</groupId>
+        <artifactId>struts2-parent</artifactId>
+        <version>2.3.12</version>
+    </parent>
+
+    <groupId>org.apache.struts.xwork</groupId>
+    <artifactId>xwork-core</artifactId>
+    <packaging>jar</packaging>
+    <name>XWork: Core</name>
+
+
+    <scm>
+        <connection>scm:svn:http://svn.apache.org/repos/asf/struts/struts2/tags/STRUTS_2_3_12/xwork-core</connection>
+        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/struts2/tags/STRUTS_2_3_12/xwork-core</developerConnection>
+        <url>http://svn.apache.org/repos/asf/struts/struts2/tags/STRUTS_2_3_12/xwork-core</url>
+    </scm>
+
+    <properties>
+        <currentVersion>${project.version}</currentVersion>
+    </properties>
+
+    <profiles>
+        <profile>
+            <!--
+                   Run the translator for Java 1.4 compatiblity
+
+                   OS/X Sample:
+                   $ cd xwork/
+                   $ mvn clean install -Pj4 -Djava14.jar=$JAVA_HOME/../Classes/classes.jar
+
+                -->
+            <id>j4</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>retrotranslator-maven-plugin</artifactId>
+                        <version>1.0-alpha-4</version>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>translate-project</goal>
+                                </goals>
+                                <configuration>
+                               

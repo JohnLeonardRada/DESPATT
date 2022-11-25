@@ -1,0 +1,34 @@
+herit.gif" ALT="extended by "><A HREF="../../../org/hibernate/dialect/Dialect.html" title="class in org.hibernate.dialect">org.hibernate.dialect.Dialect</A>
+      <IMG SRC="../../../resources/inherit.gif" ALT="extended by "><B>org.hibernate.dialect.ProgressDialect</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ProgressDialect</B><DT>extends <A HREF="../../../org/hibernate/dialect/Dialect.html" title="class in org.hibernate.dialect">Dialect</A></DL>
+</PRE>
+
+<P>
+An SQL dialect compatible with Progress 9.1C<br>
+<br>
+ Connection Parameters required:
+<ul>
+ <li>hibernate.dialect org.hibernate.sql.ProgressDialect
+ <li>hibernate.driver com.progress.sql.jdbc.JdbcProgressDriver
+ <li>hibernate.url jdbc:JdbcProgress:T:host:port:dbname;WorkArounds=536870912
+ <li>hibernate.username username
+ <li>hibernate.password password
+</ul>
+ The WorkArounds parameter in the URL is required to avoid an error
+ in the Progress 9.1C JDBC driver related to PreparedStatements.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Phillip Baird</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary">

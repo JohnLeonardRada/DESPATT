@@ -1,0 +1,74 @@
+n (String) get(ACTION_NAME);
+    }
+
+    /**
+     * Sets the action parameters.
+     *
+     * @param parameters the parameters for the current action.
+     */
+    public void setParameters(Map<String, Object> parameters) {
+        put(PARAMETERS, parameters);
+    }
+
+    /**
+     * Returns a Map of the HttpServletRequest parameters when in a servlet environment or a generic Map of
+     * parameters otherwise.
+     *
+     * @return a Map of HttpServletRequest parameters or a multipart map when in a servlet environment, or a
+     *         generic Map of parameters otherwise.
+     */
+    public Map<String, Object> getParameters() {
+        return (Map<String, Object>) get(PARAMETERS);
+    }
+
+    /**
+     * Sets a map of action session values.
+     *
+     * @param session  the session values.
+     */
+    public void setSession(Map<String, Object> session) {
+        put(SESSION, session);
+    }
+
+    /**
+     * Gets the Map of HttpSession values when in a servlet environment or a generic session map otherwise.
+     *
+     * @return the Map of HttpSession values when in a servlet environment or a generic session map otherwise.
+     */
+    public Map<String, Object> getSession() {
+        return (Map<String, Object>) get(SESSION);
+    }
+
+    /**
+     * Sets the OGNL value stack.
+     *
+     * @param stack the OGNL value stack.
+     */
+    public void setValueStack(ValueStack stack) {
+        put(VALUE_STACK, stack);
+    }
+
+    /**
+     * Gets the OGNL value stack.
+     *
+     * @return the OGNL value stack.
+     */
+    public ValueStack getValueStack() {
+        return (ValueStack) get(VALUE_STACK);
+    }
+    
+    /**
+     * Gets the container for this request
+     * 
+     * @param cont The container
+     */
+    public void setContainer(Container cont) {
+        put(CONTAINER, cont);
+    }
+    
+    /**
+     * Sets the container for this request
+     * 
+     * @return The container
+     */
+    public Container getContain

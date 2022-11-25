@@ -1,0 +1,13 @@
+ in AbstractQueryImpl">X</A>&gt; <B>setFirstResult</B>(int&nbsp;firstResult)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setFirstResult(int)" title="class or interface in javax.persistence">setFirstResult</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setFirstResult(int)" title="class or interface in javax.persistence">setFirstResult</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="type parameter in AbstractQueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFirstResult()"><!-- --></A><H3>
+getFirstResult</H

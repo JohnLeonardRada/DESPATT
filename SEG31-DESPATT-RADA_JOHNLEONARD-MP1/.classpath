@@ -1,0 +1,14 @@
+space    the namespace of the action, can be <tt>null</tt>
+     * @param actionName   the name of the action
+     * @param methodName   the name of the method to execute
+     * @param extraContext a Map of extra parameters to be provided to the ActionProxy, can be <tt>null</tt>
+     * @param executeResult flag which tells whether the result should be executed after the action
+     * @param cleanupContext flag which tells whether the original context should be preserved during execution of the proxy.
+     * @return ActionProxy  the created action proxy
+     * @since 2.1.1
+     */
+    public ActionProxy createActionProxy(String namespace, String actionName, String methodName, Map<String, Object> extraContext, boolean executeResult, boolean cleanupContext);
+
+
+     /**
+     * Creates an {@link ActionProxy} for the given namespace and 

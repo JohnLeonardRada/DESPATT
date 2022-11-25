@@ -1,0 +1,25 @@
+ntiate(org.hibernate.engine.SessionImplementor, org.hibernate.persister.collection.CollectionPersister, java.io.Serializable)">CollectionType</A></CODE></B></DD>
+<DD>Instantiate an uninitialized collection wrapper or holder. Callers MUST add the holder to the
+ persistence context!
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/type/CollectionType.html#instantiate(org.hibernate.engine.SessionImplementor, org.hibernate.persister.collection.CollectionPersister, java.io.Serializable)">instantiate</A></CODE> in class <CODE><A HREF="../../../org/hibernate/type/CollectionType.html" title="class in org.hibernate.type">CollectionType</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>session</CODE> - The session from which the request is originating.<DD><CODE>persister</CODE> - The underlying collection persister (metadata)<DD><CODE>key</CODE> - The owner key.
+<DT><B>Returns:</B><DD>The instantiated collection.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../org/hibernate/HibernateException.html" title="class in org.hibernate">HibernateException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="wrap(org.hibernate.engine.SessionImplementor, java.lang.Object)"><!-- --></A><H3>
+wrap</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/collection/PersistentCollection.html" title="interface in org.hibernate.collection">PersistentCollection</A> <B>wrap</B>(<A HREF="../../../org/hibernate/engine/SessionImplementor.html" title="interface in org.hibernate.engine">SessionImplementor</A>&nbsp;session,
+                                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;collection)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../org/hibernate/type/CollectionType.html#wrap(org.hibernate.engine.SessionImplementor, java.lang.Object)">CollectionType</A></CODE></B></DD>
+<DD>Wrap the naked collection instance in a wrapper, or instantiate a
+ holder. Callers <b>MUST</b> 

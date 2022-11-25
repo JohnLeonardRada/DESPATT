@@ -1,0 +1,25 @@
+null;
+    }
+
+    public Object nullPropertyValue(Map<String, Object> context, Object target, Object property) {
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("Entering nullPropertyValue [target="+target+", property="+property+"]");
+        }
+
+        boolean c = ReflectionContextState.isCreatingNullObjects(context);
+
+        if (!c) {
+            return null;
+        }
+
+        if ((target == null) || (property == null)) {
+            return null;
+        }
+
+        try {
+            String propName = property.toString();
+            Object realTarget = reflectionProvider.getRealTarget(propName, context, target);
+            Class clazz = null;
+
+            if (realTarget != null) {
+                PropertyDescriptor pd = reflectionProvider.getPropertyDescr

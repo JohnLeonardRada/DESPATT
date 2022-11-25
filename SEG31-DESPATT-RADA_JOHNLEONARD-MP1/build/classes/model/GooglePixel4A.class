@@ -1,0 +1,39 @@
+on state.
+     */
+    public void setActionInvocation(ActionInvocation actionInvocation) {
+        put(ACTION_INVOCATION, actionInvocation);
+    }
+
+    /**
+     * Gets the action invocation (the execution state).
+     *
+     * @return the action invocation (the execution state).
+     */
+    public ActionInvocation getActionInvocation() {
+        return (ActionInvocation) get(ACTION_INVOCATION);
+    }
+
+    /**
+     * Sets the action's application context.
+     *
+     * @param application the action's application context.
+     */
+    public void setApplication(Map<String, Object> application) {
+        put(APPLICATION, application);
+    }
+
+    /**
+     * Returns a Map of the ServletContext when in a servlet environment or a generic application level Map otherwise.
+     *
+     * @return a Map of ServletContext or generic application level Map
+     */
+    public Map<String, Object> getApplication() {
+        return (Map<String, Object>) get(APPLICATION);
+    }
+
+    /**
+     * Sets the action context for the current thread.
+     *
+     * @param context the action context.
+     */
+    pu
